@@ -1,0 +1,30 @@
+manifestVersion: 1.0.0
+package:
+  name: kaggle-home-prices-xgbregressor
+  description: 'Ames house prices: EDA + XGBoost pipeline with ordinals, TotalSF, and Target Encoder (Neighborhood)'
+  authors: [Blaze Kotsenburg]
+code:
+  - description: Exploratory Data Analysis (EDA) for Kaggle home price prediction challenge.
+    path: ./eda.ipynb
+model:
+  description: XGBRegressor model used for Kaggle home price prediction wrapped in Scikit-learn pipeline.
+  framework: Scikit-learn
+  name: joblib xgbregressor
+  path: ./models/kaggle-home-price-xgbregressor.joblib
+  version: 1.0.0
+datasets:
+  - name: KaggleSubmission
+    path: ./submission.csv
+    description: Final submission for "Housing Prices Competition for Kaggle Learn Users" (https://www.kaggle.com/competitions/home-data-for-ml-course/overview).
+  - name: Train 
+    path: ./data/train.csv
+    description: Training data for Home Price predition.
+  - name: Test
+    path: ./data/test.csv
+    description: Test data for Home Price predition.
+  - name: Requirements
+    path: ./requirements.txt
+    description: Requirements file for running EDA notebook.
+docs:
+  - path: README.md
+    description: Readme file
