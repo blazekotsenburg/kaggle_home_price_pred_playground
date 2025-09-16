@@ -69,7 +69,7 @@
 
 **Decision:** proceed with **XGBoost** + the shared preprocessing (ordinals, `TotalSF`, TE[`Neighborhood`]) wrapped in `TransformedTargetRegressor`.
 
----s
+---
 
 `requirements.txt` (minimal):
 
