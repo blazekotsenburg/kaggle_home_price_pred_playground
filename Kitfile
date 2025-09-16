@@ -7,11 +7,11 @@ code:
   - description: Exploratory Data Analysis (EDA) for Kaggle home price prediction challenge.
     path: ./eda.ipynb
 model:
-  - description: XGBRegressor model used for Kaggle home price prediction wrapped in Scikit-learn pipeline.
-    framework: Scikit-learn
-    name: joblib xgbregressor
-    path: ./models/kaggle-home-price-xgbregressor.joblib
-    version: 1.0.0
+  description: XGBRegressor model used for Kaggle home price prediction wrapped in Scikit-learn pipeline.
+  framework: Scikit-learn
+  name: joblib xgbregressor
+  path: ./models/kaggle-home-price-xgbregressor.joblib
+  version: 1.0.0
 datasets:
   - name: KaggleSubmission
     path: ./submission.csv
